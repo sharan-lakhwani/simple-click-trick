@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        
+        .menu{
+            border: 1px solid black;
+            background-color: antiquewhite;
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        #check:checked ~ .menu{
+
+            display: block;
+
+        }
+    </style>
+  </head>
+  <body>
+    <input id="check" type="checkbox" />
+    <label for="check">
+         mostrar menú
+    </label>
+    <section class="menu">menú</section>
+  </body>
+</html>
